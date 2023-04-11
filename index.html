@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              blueCrayola: "#2762F6",
+            },
+          },
+          screens: {
+            mobile: "640px",
+            tablet: "960px",
+            desktop: "1280px",
+          },
+          container: {
+            screens: {
+              mobile: "600px",
+              tablet: "900px",
+              desktop: "1200px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header class="h-[500px] bg-blueCrayola">
+      <div class="container mx-auto">
+        <div class="pt-5 mb-10 text-white">icon</div>
+        <div class="flex items-center">
+          <div class="flex-1 pt-14">
+            <h1 class="text-white text-[40px] mb-3 font-bold">펫보험은</h1>
+            <h1 class="text-white text-[40px] mb-3 font-bold tracking-[3px]">
+              우리아이들을 지키는
+            </h1>
+            <h1 class="text-white text-[40px] mb-3 font-bold">
+              필수적 선택입니다
+            </h1>
+            <p class="text-white text-[20px]">어느 날 나에게 따뜻한 선물로</p>
+            <p class="text-white text-[20px]">찾아온 우리 아이들</p>
+            <p class="text-white text-[20px]">오래오래 우리와 함께 하기를</p>
+          </div>
+          <div class="flex-1">img</div>
+        </div>
+      </div>
+    </header>
+    <!-- banner -->
+    <section class="banner bg-red-500">banner</section>
+    <!-- carousel -->
+    <section class="carousel"></section>
+    <!-- form -->
+    <section class="formActive"></section>
+    <!-- helper -->
+    <section class="helper"></section>
+    <!-- helper -->
+    <section class="carouselSelect"></section>
+    <!-- form -->
+    <section class="form"></section>
+    <!-- carousel Petro -->
+    <section class="carouselPetro"></section>
+    <!-- partner -->
+    <section class="partner"></section>
+    <!-- footer -->
+    <footer></footer>
+  </body>
+</html>
