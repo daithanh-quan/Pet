@@ -1,217 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pet</title>
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              blueCrayola: "#2762F6",
-              spaceCadet: "#232B4D",
-              deepKoamaru: "#2F3C6C",
-            },
-          },
-          screens: {
-            mobile: "640px",
-            tablet: "960px",
-            desktop: "1280px",
-          },
-          container: {
-            screens: {
-              mobile: "600px",
-              tablet: "900px",
-              desktop: "1200px",
-            },
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pet</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            blueCrayola: "#2762F6",
+            spaceCadet: "#232B4D",
+            deepKoamaru: "#2F3C6C",
           },
         },
-      };
-    </script>
-  </head>
-  <body>
-    <header class="bg-blueCrayola pb-16">
-      <div class="container mx-auto">
-        <div class="pt-5 mb-10 text-white">
-          <img src="./assets/images/Group.png" class="w-[200px]" />
+        screens: {
+          mobile: "640px",
+          tablet: "960px",
+          desktop: "1280px",
+        },
+        container: {
+          screens: {
+            mobile: "600px",
+            tablet: "900px",
+            desktop: "1200px",
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body>
+  <header class="bg-blueCrayola pb-16">
+    <div class="container mx-auto">
+      <div class="pt-5 mb-10 text-white">
+        <img src="./assets/images/Group.png" class="w-[200px]" />
+      </div>
+      <div class="flex items-center">
+        <div class="flex-[0_0_25%] pt-14">
+          <h1 class="text-white text-[55px] mb-3 font-bold">펫보험은</h1>
+          <h1 class="text-white text-[55px] mb-3 font-bold tracking-[3px] whitespace-nowrap">
+            우리아이들을 지키는
+          </h1>
+          <h1 class="text-white text-[55px] mb-3 font-bold">
+            필수적 선택입니다
+          </h1>
+          <p class="text-white text-[20px]">어느 날 나에게 따뜻한 선물로</p>
+          <p class="text-white text-[20px]">찾아온 우리 아이들</p>
+          <p class="text-white text-[20px]">오래오래 우리와 함께 하기를</p>
         </div>
-        <div class="flex items-center">
-          <div class="flex-[0_0_25%] pt-14">
-            <h1 class="text-white text-[55px] mb-3 font-bold">펫보험은</h1>
-            <h1
-              class="text-white text-[55px] mb-3 font-bold tracking-[3px] whitespace-nowrap"
-            >
-              우리아이들을 지키는
-            </h1>
-            <h1 class="text-white text-[55px] mb-3 font-bold">
-              필수적 선택입니다
-            </h1>
-            <p class="text-white text-[20px]">어느 날 나에게 따뜻한 선물로</p>
-            <p class="text-white text-[20px]">찾아온 우리 아이들</p>
-            <p class="text-white text-[20px]">오래오래 우리와 함께 하기를</p>
-          </div>
-          <div class="flex-[0_0_40%] relative left-[-65px]">
-            <img
-              src="./assets/images/Group 367.png"
-              class="w-full object-contain h-full block"
-            />
-          </div>
+        <div class="flex-[0_0_40%] relative left-[-65px]">
+          <img src="./assets/images/Group 367.png" class="w-full object-contain h-full block" />
         </div>
       </div>
-    </header>
-    <!-- banner -->
-    <section class="banner bg-red-500">banner</section>
-    <!-- carousel -->
-    <section class="carousel"></section>
-    <!-- form -->
-    <section class="formActive"></section>
-    <!-- helper -->
-    <section class="helper"></section>
-    <!-- helper -->
-    <section class="carouselSelect"></section>
-    <!-- form -->
-    <section class="form"></section>
-    <!-- carousel Petro -->
-    <section class="carouselPetro"></section>
-    <!-- partner -->
-    <section class="partner py-5">
-      <div class="container mx-auto">
-        <h1
-          class="text-blueCrayola py-10 uppercase text-[40px] text-center font-semibold"
-        >
-          pet pro partner
-        </h1>
-        <div class="flex justify-center items-center">
-          <img src="./assets/images/Group 48095541.png" />
-          <img src="./assets/images/Group 48095542.png" />
-
-          <img src="./assets/images/Group 48095535.png" />
-          <img src="./assets/images/Group 48095534.png" />
-        </div>
-        <div class="flex justify-center items-center pb-10">
-          <img src="./assets/images/Group 48095539.png" />
-          <img src="./assets/images/Group 48095538.png" />
-
-          <img src="./assets/images/Group 48095537.png" />
-          <img src="./assets/images/Group 48095536.png" />
-          <img src="./assets/images/Group 48095540.png" />
-        </div>
-      </div>
-    </section>
-    <!-- footer -->
-    <footer class="bg-spaceCadet pb-5 pt-10">
-      <div class="container mx-auto">
-        <div
-          class="flex justify-between border-b-[0.5px] border-solid border-gray-100 pb-10"
-        >
-          <div class="flex flex-[0_0_60%] flex justify-between">
-            <div class="flex-1">
-              <p class="text-white cursor-pointer pb-2 opacity-70 text-sm">
-                펫프로 소개
-              </p>
-              <p class="text-white cursor-pointer pb-2 opacity-70 text-sm">
-                펫프로란?
-              </p>
-              <p class="text-white cursor-pointer pb-2 opacity-70 text-sm">
-                사업영역
-              </p>
-              <p class="text-white cursor-pointer pb-2 opacity-70 text-sm">
-                VISION
-              </p>
-            </div>
-            <div class="flex-1">
-              <p class="text-white cursor-pointer pb-2 opacity-70 text-sm">
-                펫프로 컨설팅
-              </p>
-              <p class="text-white cursor-pointer pb-2 opacity-70 text-sm">
-                펫보험 영업센터 구축
-              </p>
-              <p class="text-white cursor-pointer pb-2 opacity-70 text-sm">
-                펫보험 광고대행
-              </p>
-            </div>
-            <div class="flex-1">
-              <p class="text-white cursor-pointer pb-2 opacity-70 text-sm">
-                펫프로교육센터
-              </p>
-              <p class="text-white cursor-pointer pb-2 opacity-70 text-sm">
-                HELPER 교육
-              </p>
-              <p class="text-white cursor-pointer pb-2 opacity-70 text-sm">
-                HELPER 지원하기
-              </p>
-              <p class="text-white cursor-pointer pb-2 opacity-70 text-sm">
-                외부 파트너 교육
-              </p>
-              <p class="text-white cursor-pointer pb-2 opacity-70 text-sm">
-                외부 파트너 지원하기
-              </p>
-              <p class="text-white cursor-pointer pb-2 opacity-70 text-sm">
-                보험광고 무료지원받기
-              </p>
-            </div>
-            <div class="flex-1">
-              <p class="text-white cursor-pointer pb-2 opacity-70 text-sm">
-                광고 PARTNER
-              </p>
-              <p class="text-white cursor-pointer pb-2 opacity-70 text-sm">
-                소개자료
-              </p>
-              <p class="text-white cursor-pointer pb-2 opacity-70 text-sm">
-                파트너 시작하기
-              </p>
-            </div>
+    </div>
+  </header>
+  <!-- insurance -->
+  <section class="insurance py-16">
+    <div class="relative mb-16">
+      <h2 class="absolute left-1/2 -translate-x-1/4 text-blueCrayola text-3xl font-bold flex">
+        <div>펫보험 종류.</div>
+        <div class="ml-40 flex items-center gap-3">
+          <div class="left-arrow">
+            <img src="./assets/insurance/left-arrow.svg" width="30" alt="left-arrow">
           </div>
-          <div class="flex-[0_0_30%]">
-            <div class="text-right pb-4 pt-2">
-              <img src="./assets/images/kakaotalk.png" class="ml-auto" />
+          <div class="right-arrow">
+            <img src="./assets/insurance/right-arrow.svg" width="30" alt="right-arrow">
+          </div>
+        </div>
+      </h2>
+    </div>
+
+    <div class="swiper insurance">
+
+      <div class="insurance_pagination absolute"></div>
+
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="flex shadow-lg rounded-lg p-6">
+            <div class="flex-1 flex-col">
+              <div class="text-blueCrayola font-bold text-2xl leading-[45px]">우리아이 건강보험</div>
+              <div class="leading-[45px] text-[30px]">
+                <span>아이가 아플 때, 다쳤을 때</span><br>
+                <span class="font-semibold">동물병원 치료비 걱정 없이</span>
+              </div>
+              <div class="my-4">치료비 최대 80%까지 보장 <br>
+                치료비 걱정없는 보험</div>
+
+              <button class="bg-blueCrayola text-[12px] font-bold text-white py-4 px-6 mt-4 rounded-md">바로 "톡"
+                상담</button>
             </div>
-            <div class="bg-deepKoamaru p-4 rounded-lg">
-              <div class="flex justify-between items-center">
-                <div class="flex-[0_0_50%]">
-                  <p class="text-white pb-2 text-sm">배너공간 배너공간</p>
-                  <p class="text-white pb-2 opacity-70 text-sm">
-                    배너공간 배너공간
-                  </p>
-                </div>
-                <div class="flex-[0_0_30%]">
-                  <img
-                    class="ml-auto"
-                    src="./assets/images/KakaoTalk_Photo_2022-11-29-11-39-29 001 1.png"
-                  />
-                </div>
+            <div class="w-1/2 flex items-center justify-center">
+              <div class="">
+                <img src="./assets/insurance/1.png" alt="insurance-1" class="object-contain h-[220px]">
               </div>
             </div>
           </div>
         </div>
-        <div class="pt-10">
-          <p class="text-white pb-2 opacity-70 text-xs">
-            <img
-              src="./assets/images//Vector.png"
-              class="inline pr-1"
-            />(주)삼성 펫프로 대표이사 주태성 | 사업자등록번호 : 351-86-02778
-          </p>
-          <p class="text-white pb-8 opacity-70 text-xs">
-            보험대리점명 : (주)삼성펫프로 / 보험대리점등록번호 : 제2023010060호
-          </p>
-          <p class="text-white pb-2 opacity-70 text-xs">
-            주소: 인천광역시 연수구 아트센터대로 87 402동 508호
-          </p>
-          <p class="text-white pb-8 opacity-70 text-xs">
-            광고센터 : 인천광역시 연수구 아트센터대로 131 402동 307호
-          </p>
-          <p class="text-white pb-2 opacity-70 text-xs">
-            <span class="font-bold">상담센터</span> :
-            <span class="font-bold">실시간 채팅</span> 또는
-            <span class="font-bold"> 전화상담 </span>
-            평일 09:00~17:00
-          </p>
+        <div class="swiper-slide">
+          <div class="flex shadow-lg rounded-lg p-6">
+            <div class="flex-1 flex-col">
+              <div class="text-blueCrayola font-bold text-2xl leading-[45px]">우리아이 양육자금 보험</div>
+              <div class="leading-[45px] text-[30px]">
+                <span>보호자가 불의의 사고로</span><br>
+                <span class="font-semibold">아이 혼자 남겨져 있을 때</span>
+              </div>
+              <div class="my-4">아이의 양육자금을<br>
+                준비할 수 있는 보험
+              </div>
+
+              <button class="bg-blueCrayola text-[12px] font-bold text-white py-4 px-6 mt-4 rounded-md">바로 "톡"
+                상담</button>
+            </div>
+            <div class="w-1/2 flex items-center justify-center">
+              <div class="">
+                <img src="./assets/insurance/2.png" alt="insurance-2" class="object-contain h-[220px]">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="flex shadow-lg rounded-lg p-6">
+            <div class="flex-1 flex-col">
+              <div class="text-blueCrayola font-bold text-2xl leading-[45px]">우리아이 의무보험</div>
+              <div class="leading-[45px] text-[30px]">
+                <span>우리아이 진짜 착한데 맹견이라 <br>
+                  <span class="font-bold">의무보험 가입을 해야 할 때</span></span>
+              </div>
+              <div class="my-4">착한 우리 아이라도<br>
+                타인을 위해 꼭 가입해야 하는 보험
+              </div>
+
+              <button class="bg-blueCrayola text-[12px] font-bold text-white py-4 px-6 mt-4 rounded-md">바로 "톡"
+                상담</button>
+            </div>
+            <div class="w-[40%] flex items-center justify-center">
+              <div class="">
+                <img src="./assets/insurance/3.png" alt="insurance-3" class="object-contain h-[220px]">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
-  </body>
+
+    </div>
+  </section>
+  <!-- carousel -->
+  <section class="carousel"></section>
+  <!-- form -->
+  <section class="formActive"></section>
+  <!-- helper -->
+  <section class="helper"></section>
+  <!-- helper -->
+  <section class="carouselSelect"></section>
+  <!-- form -->
+  <section class="form"></section>
+  <!-- carousel Petro -->
+  <section class="carouselPetro"></section>
+  <!-- partner -->
+  <section class="partner py-5">
+    <div class="container mx-auto">
+      <h1 class="text-blueCrayola py-10 uppercase text-[40px] text-center font-semibold">
+        pet pro partner
+      </h1>
+      <div class="flex justify-center items-center">
+        <img src="./assets/images/Group 48095541.png" />
+        <img src="./assets/images/Group 48095542.png" />
+
+        <img src="./assets/images/Group 48095535.png" />
+        <img src="./assets/images/Group 48095534.png" />
+      </div>
+      <div class="flex justify-center items-center pb-10">
+        <img src="./assets/images/Group 48095539.png" />
+        <img src="./assets/images/Group 48095538.png" />
+
+        <img src="./assets/images/Group 48095537.png" />
+        <img src="./assets/images/Group 48095536.png" />
+        <img src="./assets/images/Group 48095540.png" />
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer class="bg-spaceCadet pb-5 pt-10">
+    <div class="container mx-auto">
+      <div class="flex justify-between border-b-[0.5px] border-solid border-gray-100 pb-10">
+        <div class="flex flex-[0_0_60%] flex justify-between">
+          <div class="flex-1">
+            <p class="text-white cursor-pointer pb-2 opacity-70 text-sm">
+              펫프로 소개
+            </p>
+            <p class="text-white cursor-pointer pb-2 opacity-70 text-sm">
+              펫프로란?
+            </p>
+            <p class="text-white cursor-pointer pb-2 opacity-70 text-sm">
+              사업영역
+            </p>
+            <p class="text-white cursor-pointer pb-2 opacity-70 text-sm">
+              VISION
+            </p>
+          </div>
+          <div class="flex-1">
+            <p class="text-white cursor-pointer pb-2 opacity-70 text-sm">
+              펫프로 컨설팅
+            </p>
+            <p class="text-white cursor-pointer pb-2 opacity-70 text-sm">
+              펫보험 영업센터 구축
+            </p>
+            <p class="text-white cursor-pointer pb-2 opacity-70 text-sm">
+              펫보험 광고대행
+            </p>
+          </div>
+          <div class="flex-1">
+            <p class="text-white cursor-pointer pb-2 opacity-70 text-sm">
+              펫프로교육센터
+            </p>
+            <p class="text-white cursor-pointer pb-2 opacity-70 text-sm">
+              HELPER 교육
+            </p>
+            <p class="text-white cursor-pointer pb-2 opacity-70 text-sm">
+              HELPER 지원하기
+            </p>
+            <p class="text-white cursor-pointer pb-2 opacity-70 text-sm">
+              외부 파트너 교육
+            </p>
+            <p class="text-white cursor-pointer pb-2 opacity-70 text-sm">
+              외부 파트너 지원하기
+            </p>
+            <p class="text-white cursor-pointer pb-2 opacity-70 text-sm">
+              보험광고 무료지원받기
+            </p>
+          </div>
+          <div class="flex-1">
+            <p class="text-white cursor-pointer pb-2 opacity-70 text-sm">
+              광고 PARTNER
+            </p>
+            <p class="text-white cursor-pointer pb-2 opacity-70 text-sm">
+              소개자료
+            </p>
+            <p class="text-white cursor-pointer pb-2 opacity-70 text-sm">
+              파트너 시작하기
+            </p>
+          </div>
+        </div>
+        <div class="flex-[0_0_30%]">
+          <div class="text-right pb-4 pt-2">
+            <img src="./assets/images/kakaotalk.png" class="ml-auto" />
+          </div>
+          <div class="bg-deepKoamaru p-4 rounded-lg">
+            <div class="flex justify-between items-center">
+              <div class="flex-[0_0_50%]">
+                <p class="text-white pb-2 text-sm">배너공간 배너공간</p>
+                <p class="text-white pb-2 opacity-70 text-sm">
+                  배너공간 배너공간
+                </p>
+              </div>
+              <div class="flex-[0_0_30%]">
+                <img class="ml-auto" src="./assets/images/KakaoTalk_Photo_2022-11-29-11-39-29 001 1.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pt-10">
+        <p class="text-white pb-2 opacity-70 text-xs">
+          <img src="./assets/images//Vector.png" class="inline pr-1" />(주)삼성 펫프로 대표이사 주태성 | 사업자등록번호 : 351-86-02778
+        </p>
+        <p class="text-white pb-8 opacity-70 text-xs">
+          보험대리점명 : (주)삼성펫프로 / 보험대리점등록번호 : 제2023010060호
+        </p>
+        <p class="text-white pb-2 opacity-70 text-xs">
+          주소: 인천광역시 연수구 아트센터대로 87 402동 508호
+        </p>
+        <p class="text-white pb-8 opacity-70 text-xs">
+          광고센터 : 인천광역시 연수구 아트센터대로 131 402동 307호
+        </p>
+        <p class="text-white pb-2 opacity-70 text-xs">
+          <span class="font-bold">상담센터</span> :
+          <span class="font-bold">실시간 채팅</span> 또는
+          <span class="font-bold"> 전화상담 </span>
+          평일 09:00~17:00
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    var swiper = new Swiper('.swiper', {
+      // Optional parameters
+      direction: 'horizontal',
+      centeredSlides: true,
+      slidesPerView: 2,
+      spaceBetween: 40,
+      // If we need pagination
+      pagination: {
+        el: '.insurance_pagination',
+        type: 'custom',
+        renderCustom: (swiper, current, total) => {
+          var pagination = document.createElement('div');
+
+          console.log(current, total);
+
+          var width = (swiper.slidesSizesGrid[0]);
+
+          var offset = swiper.slidesGrid[1];
+
+          return `<div class="bg-black/10 relative" style="width:${width}px;height:3px;margin-left:${offset}px">
+              <div class="bg-black absolute top-0 bottom-0" style="width:${(1 / total) * 100}% ;left:${((current - 1) / total) * 100}%;height:4px;"></div>
+            </div>`
+        }
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.right-arrow',
+        prevEl: '.left-arrow',
+      },
+    });
+  </script>
+</body>
+
 </html>

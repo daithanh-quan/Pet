@@ -1,0 +1,14 @@
+:root {
+    --swiper-pagination-bottom: 0px;
+}
+
+.swiper {
+    width: 100%;
+    height: 360px;
+}
+
+.swiper-button-previous {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
